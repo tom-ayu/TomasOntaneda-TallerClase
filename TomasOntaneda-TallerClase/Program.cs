@@ -1,4 +1,8 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<JugadorContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("JugadorContext") ?? throw new InvalidOperationException("Connection string 'JugadorContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -20,3 +20,22 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar-custom {
+    background-color: #005CFF;
+    /* Corresponde a border-bottom: un borde en la parte inferior */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* Corresponde a box-shadow: una sombra suave alrededor del navbar */
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    /* Corresponde a mb-3: margen inferior de 1rem */
+    margin-bottom: 1rem;
+}
+
+.navbar-brand-custom {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.img-custom {
+    margin-right: 10px;
+}
